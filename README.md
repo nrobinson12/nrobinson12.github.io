@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Nrobinson12.Github.Io
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.7.
@@ -26,3 +27,9 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# nrobinson12.github.io
+
+This is my site to test things out on.
+You can go to my stable site at www.nwrobinson.com
+>>>>>>> 3defc0f697ef4a0038668f1414ca21573c6e5a90
