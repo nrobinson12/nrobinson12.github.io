@@ -1,0 +1,20 @@
+<div class="shadow section" id="experience">
+    <div class="title">EXPERIENCE</div>
+    <div class="separator"></div>
+    <div class="job" ng-repeat="job in ctrl.jobs track by $index">
+        <div class="image"><img ng-src="{{ job.image }}"></div>
+        <div class="text">
+            <div class="container">
+                <div class="header">
+                    <h3 style="float: left;">{{ job.company }}</h3>
+                    <h3 style="float: right">{{ job.date }}</h3>
+                </div>
+                <div class="separator"></div>
+                <div class="desection" ng-repeat="section in job.sections track by $index">
+                    <p class="detitle">{{ section.title }}</p>
+                    <p class="description">{{ section.description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
