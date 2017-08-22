@@ -1,0 +1,12 @@
+/*	Nicholas Robinson
+	Portfolio Website
+    Start: June 12 2017
+*/
+
+@media only screen and (max-width: 768px) and (min-width: 320px) {
+
+	.topnav {
+		height: 100px;
+	}
+
+}
