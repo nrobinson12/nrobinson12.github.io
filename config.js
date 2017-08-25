@@ -1,4 +1,4 @@
-app.config(function($routeProvider) {
+app.config(function($routeProvider, $locationProvider) {
     $routeProvider
     .when("/", {
         templateUrl: "partials/home.html"
@@ -9,6 +9,12 @@ app.config(function($routeProvider) {
     })
     .when("/experience", {
         templateUrl: "partials/experience.html",
-        controller: "experienceCtrl as ctrl"
+        controller: experienceCtrl
     })
+    .otherwise({
+        redirectTo: "/"
+    });
+
+    // HTML5 History API
+    // $locationProvider.html5Mode(true);
 });
