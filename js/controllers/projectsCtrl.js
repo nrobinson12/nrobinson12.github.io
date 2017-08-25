@@ -1,4 +1,4 @@
-app.controller('projectsCtrl', ['$scope', function($scope) {
+app.controller('projectsCtrl', function($scope) {
     $scope.projects = [
         {   image: "assets/images/rogue-arrow.png",
             name: "Rogue Arrow",
@@ -16,4 +16,4 @@ app.controller('projectsCtrl', ['$scope', function($scope) {
             github: "https://github.com/nrobinson12/Classic-Pong"
         }
     ];
-}]);
+});

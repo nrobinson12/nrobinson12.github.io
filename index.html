@@ -6,7 +6,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html ng-app="app" ng-controller="mainCtrl as main">
 
     <head>
 
@@ -28,8 +28,8 @@
 
     </head>
 
-    <body ng-cloak ng-app="website">
-        <div class="main" ng-controller="mainController">
+    <body ng-cloak>
+        <div class="main">
             <div class="shadow topnav">
                 <div class="leftside">
                     <a href=""><img class="logo" src="assets/images/mylogo.png" alt="Personal logo"></a>
@@ -41,7 +41,7 @@
                     <a class="navbtn" href="#/experience">EXPERIENCE</a>
                     <a class="navbtn" href="#/projects">PROJECTS</a>
                     <a class="navbtn" href="#/about">ABOUT</a>
-                    <a class="navbtn" href="#/">HOME</a>
+                    <a class="navbtn" href="/">HOME</a>
                 </div>
             </div>
 
@@ -53,7 +53,7 @@
                 </div>
             </div>
 
-            <div class="shadow section" id="about">
+            <!-- <div class="shadow section" id="about">
                 <div class="aboutText">
                     <div class="title">ABOUT ME</div>
                     <div class="separator"></div>
@@ -62,7 +62,7 @@
                 <div class="shadow aboutImg">
                     <img src="assets/images/bench.png" alt="Profile picture">
                 </div>
-            </div>
+            </div> -->
 
             <!-- <div class="pics" id="pic1"></div>
 
@@ -104,7 +104,7 @@
                 </div>
             </div> -->
 
-            <div class="pics" id="pic4"></div>
+            <!-- <div class="pics" id="pic4"></div>
 
             <div class="shadow section" id="contact">
                 <div class="title">CONTACT ME</div>
@@ -115,7 +115,7 @@
                     <a href="https://www.linkedin.com/in/nrobinson12/" target="_blank"><img src="assets/images/linkedin.png"></a>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div ng-view></div>
 
