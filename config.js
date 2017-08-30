@@ -13,7 +13,7 @@ app.config(function($routeProvider, $locationProvider) {
     })
     .when("/experience", {
         templateUrl: "partials/experience.html",
-        controller: "experienceCtrl as ctrl"
+        controller: "experienceCtrl"
     })
     .otherwise({
         redirectTo: "/"
