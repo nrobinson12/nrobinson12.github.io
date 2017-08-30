@@ -6,24 +6,21 @@
 
 <!DOCTYPE html>
 
-<html ng-app="app" ng-controller="mainCtrl as main">
+<html ng-app="app" ng-controller="mainCtrl">
 
     <head>
-
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
 
         <title>Nicholas Robinson</title>
-        <base href="/">
+        <base href="/"/>
         <link rel="icon" href="https://nrobinson12.github.io/assets/images/mylogo.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Muli|Rubik+Mono+One" rel="stylesheet">
         <link rel="stylesheet" href="styles/desktop.css">
         <link rel="stylesheet" href="styles/phone.css">
 
         <!-- scripts -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 
@@ -53,70 +50,6 @@
                     <h2>&lt;&lt; Software Developer &gt;&gt;</h2>
                 </div>
             </div>
-
-            <!-- <div class="shadow section" id="about">
-                <div class="aboutText">
-                    <div class="title">ABOUT ME</div>
-                    <div class="separator"></div>
-                    <p class="container">Currently, an undergraduate student at the University of Waterloo majoring in Computer Science. I am goal-oriented, always willing and wanting to learn more about computer software each day.</p>
-                </div>
-                <div class="shadow aboutImg">
-                    <img src="assets/images/bench.png" alt="Profile picture">
-                </div>
-            </div> -->
-
-            <!-- <div class="pics" id="pic1"></div>
-
-            <div class="shadow section" id="projects">
-                <div class="title">PROJECTS</div>
-                <div class="separator"></div>
-                <div class="items">
-                    <div class="project" ng-repeat="project in projects track by $index">
-                        <div class="container">
-                            <img ng-src="{{ project.image }}">
-                            <h3>{{ project.name }}</h3>
-                            <p>{{ project.description }}</p>
-                            <a class="git" href="{{ project.github }}" target="_blank">Check it Out &#8594;</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pics" id="pic2"></div>
-
-            <div class="shadow section" id="experience">
-                <div class="title">EXPERIENCE</div>
-                <div class="separator"></div>
-                <div class="job" ng-repeat="job in jobs track by $index">
-                    <div class="image"><img ng-src="{{ job.image }}"></div>
-                    <div class="text">
-                        <div class="container">
-                            <div class="header">
-                                <h3 style="float: left;">{{ job.company }}</h3>
-                                <h3 style="float: right">{{ job.date }}</h3>
-                            </div>
-                            <div class="separator"></div>
-                            <div class="desection" ng-repeat="section in job.sections track by $index">
-                                <p class="detitle">{{ section.title }}</p>
-                                <p class="description">{{ section.description }}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-            <!-- <div class="pics" id="pic4"></div>
-
-            <div class="shadow section" id="contact">
-                <div class="title">CONTACT ME</div>
-                <div class="separator"></div>
-                <p>Send your emails to me@nwrobinson.com</p>
-                <div class="buttons">
-                    <a href="https://github.com/nrobinson12" target="_blank"><img src="assets/images/github.png"></a>
-                    <a href="https://www.linkedin.com/in/nrobinson12/" target="_blank"><img src="assets/images/linkedin.png"></a>
-                </div>
-            </div>
-        </div> -->
 
         <div ng-view></div>
 
