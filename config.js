@@ -1,23 +1,21 @@
-app.config(function($routeProvider, $locationProvider) {
+app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 
-    // HTML5 History API
-    $locationProvider.html5Mode(true);
+    // $locationProvider.html5Mode(true);
+    $locationProvider.hashPrefix('');
 
     $routeProvider
-    .when("/", {
-        templateUrl: "partials/home.html"
+    .when('/', {
+        templateUrl: 'partials/home.html'
     })
-    .when("/projects", {
-        templateUrl: "partials/projects.html",
+    .when('/projects', {
+        templateUrl: 'partials/projects.html',
         controller: 'projectsCtrl'
     })
-    .when("/experience", {
-        templateUrl: "partials/experience.html",
-        controller: "experienceCtrl"
+    .when('/experience', {
+        templateUrl: 'partials/experience.html',
+        controller: 'experienceCtrl'
     })
     .otherwise({
-        redirectTo: "/"
+        redirectTo: '/'
     });
-
-    
-});
+}]);
