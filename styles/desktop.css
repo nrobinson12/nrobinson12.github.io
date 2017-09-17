@@ -114,7 +114,8 @@
     vertical-align: middle;
 }
 
-.topnav .leftside a:hover > .icon {
+.topnav .rightside a:hover > .icon,
+.topnav a:hover {
     color: var(--primary-color);
 }
 
@@ -189,6 +190,14 @@ h2 {
 
 /* --------------PROJECTS-------------- */
 
+#projects p {
+    padding: 0 10px 10px 10px;
+}
+
+#projects h3 {
+    padding: 10px 10px 0 10px;
+}
+
 #projects .items {
     display: table;
     width: 100%;
@@ -206,42 +215,42 @@ h2 {
     width: 100%;
 }
 
-#projects .projecttext {
+#projects .projectabout {
     position: absolute;
     bottom: 0;
     left: 0;
     z-index: 1;
-    margin: 0 10px 50px 50px;
-    padding: 15px;
+    margin: 0 0 50px 50px;
+    max-width: 30%;
+    overflow: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+#projects .projecttext {
     background-color: #ffffff;
-    max-width: 20%;
     border-radius: 5px;
+}
+
+#projects .links {
+    width: 40px;
+    height: 100%;
+    padding: 17px 10px 17px 10px;
+    background-color: rgb(70, 70, 70);
+    border-radius: 0 5px 5px 0;
+}
+
+#projects .links:hover > .icon {
+    color: var(--primary-color);
 }
 
 #projects h3, #projects p {
     margin: 0;
-}
-
-#projects .git {
-    padding: 15px;
-    bottom: 0;
-    font-size: 16px;
-    position: absolute;
-    left: 0;
-    display: block;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.1);
-    color: black;
-    text-decoration: none;
-    width: 100%;
-}
-
-#projects .git:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-#projects .git:active {
-    background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* --------------EXPERIENCE-------------- */
