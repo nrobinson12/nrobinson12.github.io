@@ -114,7 +114,7 @@
     vertical-align: middle;
 }
 
-.topnav .leftside a:hover {
+.topnav .leftside a:hover > .icon {
     color: var(--primary-color);
 }
 
