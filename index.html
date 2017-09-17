@@ -12,9 +12,12 @@
         
         <title>Nicholas Robinson</title>
         <base href="/"/>
-        <link rel="icon" href="https://nrobinson12.github.io/assets/images/mylogo.png">
+        <link rel="icon" href="https://nrobinson12.github.io/assets/images/mylogo1.png">
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Muli|Rubik+Mono+One" rel="stylesheet">
+        <link rel="stylesheet" href="assets/icons/ionicons.css">
+
+        <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/desktop.css">
         <link rel="stylesheet" href="styles/phone.css">
 
@@ -26,29 +29,6 @@
     </head>
 
     <body ng-cloak>
-        <div class="main">
-            <div class="shadow topnav">
-                <div class="leftside">
-                    <a href=""><img class="logo" src="assets/images/mylogo.png" alt="Personal logo"></a>
-                    <a href="https://github.com/nrobinson12" target="_blank"><img class="button" src="assets/icons/github.png" alt="Github" title="Github"></a>
-                    <a href="https://www.linkedin.com/in/nrobinson12/" target="_blank"><img class="button" src="assets/icons/linkedin.png" alt="Linkedin" title="Linkedin"></a>
-                </div>
-                <div class="rightside">
-                    <a class="navbtn" href="#contact">CONTACT</a>
-                    <a class="navbtn" href="#experience">EXPERIENCE</a>
-                    <a class="navbtn" href="#projects">PROJECTS</a>
-                    <a class="navbtn" href="#about">ABOUT</a>
-                    <a class="navbtn" href="/">HOME</a>
-                </div>
-            </div>
-
-            <div class="pics" id="main">
-                <div class="profile">
-                    <img class="shadow profilepic" src="assets/images/profile.png" alt="Profile picture">
-                    <h1>Nicholas Wesley Robinson</h1>
-                    <h2>&lt;&lt; Software Developer &gt;&gt;</h2>
-                </div>
-            </div>
 
         <div ng-view></div>
 
@@ -57,8 +37,7 @@
 
         <!-- controllers -->
         <script src="js/controllers/mainCtrl.js"></script>
-        <script src="js/controllers/projectsCtrl.js"></script>
-        <script src="js/controllers/experienceCtrl.js"></script>
+        <script src="js/controllers/homeCtrl.js"></script>
         
         <!-- directives -->
 

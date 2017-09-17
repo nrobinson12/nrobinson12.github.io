@@ -5,15 +5,8 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
     $routeProvider
     .when('/', {
-        templateUrl: 'partials/home.html'
-    })
-    .when('/projects', {
-        templateUrl: 'partials/projects.html',
-        controller: 'projectsCtrl'
-    })
-    .when('/experience', {
-        templateUrl: 'partials/experience.html',
-        controller: 'experienceCtrl'
+        templateUrl: 'partials/home.html',
+        controller: 'homeCtrl'
     })
     .otherwise({
         redirectTo: '/'

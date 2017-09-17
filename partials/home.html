@@ -1,1 +1,60 @@
-<p>IT WORKS</p>
+<div class="main">
+    <div class="topnav">
+        <div class="leftside">
+            <a class="navbtn" href="/">Nicholas Robinson</a>
+        </div>
+        <div class="rightside">
+            <a class="navbtn" href="https://github.com/nrobinson12" target="_blank"><i class="icon ion-social-github"></i></a>
+            <a class="navbtn" href="https://www.linkedin.com/in/nrobinson12/" target="_blank"><i class="icon ion-social-linkedin"></i></a>
+        </div>
+        
+    </div>
+
+    <div class="pics" id="main">
+        <!-- <div class="profile">
+            <img class="shadow profilepic" src="assets/images/profile.png" alt="Profile picture">
+            <h1>Nicholas Wesley Robinson</h1>
+            <h2>&lt;&lt; Software Developer &gt;&gt;</h2>
+        </div> -->
+    </div>
+    
+    <div class="section" id="projects">
+        <div class="title">PROJECTS</div>
+        <!-- <div class="separator"></div> -->
+        <div class="items">
+            <div class="project" ng-repeat="project in projects track by $index">
+                <div class="container" style="background: url('{{ project.image }}') no-repeat center center;background-size: cover;">
+                    <!-- <img ng-src="{{ project.image }}"> -->
+                    <div class="projecttext">
+                        <h3>{{ project.name }}</h3>
+                        <!-- <p>{{ project.description }}</p> -->
+                        <p>Made by: {{ project.by }}</p>
+                        <!-- <a class="git" ng-href="{{ project.github }}" target="_blank">Check it Out &#8594;</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="experience">
+        <div class="title">EXPERIENCE</div>
+        <div class="separator"></div>
+        <div class="job" ng-repeat="job in jobs track by $index">
+            <div class="image"><img ng-src="{{ job.image }}"></div>
+            <div class="text">
+                <div class="container">
+                    <div class="header">
+                        <h3 style="float: left;">{{ job.company }}</h3>
+                        <h3 style="float: right">{{ job.date }}</h3>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="desection" ng-repeat="section in job.sections track by $index">
+                        <p class="detitle">{{ section.title }}</p>
+                        <p class="description">{{ section.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
