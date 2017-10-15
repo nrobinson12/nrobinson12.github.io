@@ -1,12 +1,9 @@
 /* General style settings */
-
-@import url('https://fonts.googleapis.com/css?family=Muli|Francois+One');
-@import "globalVars.css";
+@import "globalvars.css";
 
 * {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Open Sans';
     color: white;
-    font-style: normal;
     margin: 0;
     padding: 0;
 }

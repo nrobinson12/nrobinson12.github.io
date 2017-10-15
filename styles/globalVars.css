@@ -1,3 +1,29 @@
 :root {
-    --primary-color: #7F90E8;
+    --primary-color: #EDC85C;
+}
+
+@font-face {
+    font-family: 'Signika';
+    src: url('../assets/fonts/signika/Signika-Regular.tff') format('truetype');;
+}
+@font-face {
+    font-family: 'Signika';
+    src: url('../assets/fonts/signika/Signika-Light.tff') format('truetype');;
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../assets/fonts/opensans/OpenSans-Regular.ttf') format('truetype');;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../assets/fonts/opensans/OpenSans-Light.ttf') format('truetype');;
+    font-weight: lighter;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../assets/fonts/opensans/OpenSans-Bold.ttf') format('truetype');;
+    font-weight: bold;
 }
