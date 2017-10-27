@@ -4,14 +4,6 @@
 */
 @import "globalvars.css";
 
-.container {
-    background-color: rgba(220, 220, 220, 0);
-    color: black;
-    overflow: hidden;
-    position: relative;
-    padding: 0;
-}
-
 /* each different section I have (eg. about, projects, etc) */
 
 .topnav, .section {
@@ -20,7 +12,7 @@
 
 .section {
     min-height: 400px;
-    background-color: rgba(121, 121, 121, 0);
+    background-color: #fafafa;
     overflow: visible;
     position: relative;
     padding: 0;
@@ -97,6 +89,7 @@
     font-weight: normal;
     text-decoration: none;
     vertical-align: middle;
+    font-weight: bolder;
 }
 
 .topnav .rightside a:hover > .icon,
@@ -202,175 +195,90 @@ h3 {
 
 /* --------------PROJECTS-------------- */
 
-#projects p {
-    padding: 0 10px 10px 10px;
+#work {
+    min-height: 100%;
+    /* padding: 0px 10%; */
 }
 
-#projects h3 {
+#work h3 {
     padding: 10px 10px 0 10px;
+    color: rgb(26, 26, 26);
+    margin-top: 0;
+    font-weight: bold;
+    transition: all 300ms linear;
 }
 
-#projects .items {
+#work .items {
     display: table;
+    text-align: center;
+    /* margin: 0 auto; */
     width: 100%;
+    height: 100%;
+    /* padding-top: 100px; */
 }
 
-#projects .project {
-    height: 650px;
-    width: 100%;
+#work .project {
+    margin: 60px 60px;
     overflow: visible;
-    display: block;
+    display: inline-block;
+    width: 40%;
+    height: 300px;
+    background-color: #2ecc71;
+    transition: all 300ms linear;
 }
 
-#projects .container {
+#work img {
+    height: 80%;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+#work .container {
+    background-color: rgb(223, 223, 223);
+    /* border-radius: 5px; */
+    /* height: 200px; */
+    height: 100%;
+    /* width: 500px; */
+    width: 100%;
+    transition: all 300ms linear;
+    overflow: visible;
+    position: relative;
+}
+
+#work .container2 {
     height: 100%;
     width: 100%;
+    transition: all 300ms linear;
 }
 
-#projects .projectabout {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    margin: 0 0 50px 50px;
-    max-width: 30%;
-    overflow: auto;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center; 
-    justify-content: center;
+#work .project:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: rgb(209, 209, 209);
 }
 
-#projects .projecttext {
-    background-color: #ffffff;
-    border-radius: 5px;
-}
-
-#projects .links {
-    width: 40px;
-    height: 100%;
-    padding: 17px 10px 17px 10px;
-    background-color: rgb(70, 70, 70);
-    border-radius: 0 5px 5px 0;
-}
-
-#projects .links:hover > .icon {
+#work .project:hover > h3 {
     color: var(--primary-color);
 }
 
-#projects h3, #projects p {
-    margin: 0;
-}
-
-/* --------------EXPERIENCE-------------- */
-
-#experience .job {
-    padding-top: 20px;
-    width: 100%;
-    margin: 0 auto;
-    overflow: visible;
-    display: inline-block;
-}
-
-#experience .image {
-    width: 15%;
-    float: left;
-    height: 200px;
-    text-align: center;
-}
-
-#experience img {
-    height: auto;
-    width: 100%;
-    float: right;
-    padding: 20px 10% 0 10%;
-}
-
-#experience .text {
-    width: 85%;
-    float: right;
-    position: relative;
-    display: table;
-    padding: 45px 70px 70px 30px;
-}
-
-#experience .container {
-    position: relative;
-    display: table;
-    height: 100%;
-    width: 100%;
-    padding-bottom: 20px;
-}
-
-#experience .header {
-    width: 100%;
-    height: 60px;
-}
-
-#experience .header h3 {
-    color: black;
-    font-size: 28px;
-    padding: 0 5% 0 5%;
-}
-
-#experience .container .separator {
-    border-color: rgba(0, 0, 0, 0.3);
-    border-width: 1px;
-    width: 90%;
-}
-
-#experience p {
-    padding: 15px 15px 0 15px;
-    font-size: 20px;
-    float: left;
-}
-
-#experience .desection {
-    min-height: 50px;
-    overflow: hidden;
-}
-
-#experience .detitle {
-    float: left;
-    width: 20%;
-    text-align: right;
-    font-weight: bold;
-}
-
-#experience .description {
-    float: right;
-    width: 80%;
-    text-align: left;
-    padding-right: 50px;
-}
-
-/* --------------HAIR-------------- */
-
-#hair .items {
-    text-align: center;
-    display: table;
-    margin: 0 auto;
-}
-
-#hair img {
-    height: 300px;
-    width: auto;
-    padding: 0;
-    margin: 50px;
-    margin-bottom: 80px;
-}
-
-#hair p {
-    padding: 40px;
-    padding-left: 100px;
-    padding-right: 100px;
-    color: rgba(255, 255, 255, 0.8);
+#work .project:hover > .container {
+    /* transform: scale(1.1); */
+    background-color: rgb(209, 209, 209);
 }
 
 /* --------------CONTACT-------------- */
+
+#contact {
+    background-color: rgb(46, 46, 46);
+}
 
 #contact p {
     margin-top: 20px;
