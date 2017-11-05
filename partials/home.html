@@ -27,7 +27,7 @@
         <div class="items">
             <a ng-href="{{ github }}" class="project" ng-repeat="project in projects track by $index">
                 <div class="container">
-                    <img ng-src="{{ project.image }}">
+                    <div class="container2" style="background-image: url('{{ project.image }}')"></div>
                 </div>
                 <h3 style="float: left">{{ project.name }}</h3>
                 <h3 style="float: right">{{ project.what }}</h3>
@@ -36,7 +36,10 @@
     </div>
 
     <div class="section" id="contact">
-        
+        <p>
+            Nicholas Robinson</br>
+            Creator. Dreamer. Achiever.</br>
+        </p>
     </div>
 
 </div>
