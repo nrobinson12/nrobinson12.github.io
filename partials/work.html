@@ -1,7 +1,11 @@
-
-<div class="title" style="background-image: url('{{ title_background }}')">
-  <img ng-src="{{ title_pic }}">
+<div class="work" style="background-image: url('{{ title_background }}')">
+  <div class="title-pic" ><img ng-src="{{ title_pic }}"></div>
+  
+  <div class="work-about">
+    <!-- <div class="work-separator" style="background-color: {{ theme }};"></div> -->
+    <div class="content" ng-repeat="section in sections track by $index">
+      <h3 style="color: {{ theme }};">{{ section.title }}</h3>
+      <h4>{{ section.description }}</h4>
+    </div>
+  </div>
 </div>
-
-<h3>WORK</h3>
-<h4>{{ name }}</h4>

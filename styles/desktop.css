@@ -38,18 +38,6 @@
     margin: 0 auto;
 }
 
-/* pictures in between sections */
-
-.main {
-    height: 100%;
-    background-image: url("../assets/images/profiletree.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-    position: relative;
-}
-
 /* --------------TOP NAVIGATION BAR-------------- */
 
 .topnav {

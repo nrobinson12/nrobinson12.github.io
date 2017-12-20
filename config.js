@@ -12,6 +12,10 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         templateUrl: 'partials/work.html',
         controller: 'viziyaCtrl'
     })
+    .when('/rogue-arrow', {
+        templateUrl: 'partials/work.html',
+        controller: 'rogueCtrl'
+    })
     .otherwise({
         redirectTo: '/'
     });

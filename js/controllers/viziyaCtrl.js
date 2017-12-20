@@ -2,7 +2,8 @@ app.controller('viziyaCtrl', function($scope) {
   
   $scope.title_background = 'assets/images/viziyabackground.jpg',
   $scope.title_pic = 'assets/images/viziya1.png',
-  
+  $scope.theme = 'rgb(248, 152, 29)',
+
   $scope.sections = [
     {   title: "Role",
         description: "Junior Software Developer"
@@ -22,5 +23,5 @@ app.controller('viziyaCtrl', function($scope) {
     {   title: "My Review",
         description: "This is an amazing company to work with. I feel right at home with the open and very friendly employees, providing a unique and lasting co-op experience. They are always willing to talk and help each other whenever is needed, making sure everyone was working as efficiently as possible. I am absolutely enjoying my time here, and I recommend this company to anyone looking for a great co-op placement."
     }
-]
+  ]
 });

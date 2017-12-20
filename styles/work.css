@@ -1,0 +1,48 @@
+.work {
+  height: 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative;
+  text-align: center;
+}
+
+.work .title-pic {
+  height: 100%;
+  margin: auto;
+  padding: 150px;
+}
+
+.work .title-pic img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.work .work-about .content {
+  padding: 15px 25% 0 25%;
+  min-height: 30px;
+  text-align: left;
+}
+
+/* .work .work-separator {
+  z-index: -1;
+  margin-top: 20px;
+  width: 100%;
+  margin: 0 auto;
+  height: 50px;
+} */
+
+.work h3 {
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.work h4 {
+  color: black;
+  padding-left: 5%;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(0,0,0,0.6);
+}
