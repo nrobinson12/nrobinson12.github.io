@@ -1,14 +1,4 @@
 <div class="main">
-    <div class="topnav">
-        <div class="leftside">
-            <a class="navbtn" href="/">Nicholas Robinson</a>
-        </div>
-        <div class="rightside">
-            <a class="navbtn" href="https://github.com/nrobinson12" target="_blank"><i class="icon ion-social-github"></i></a>
-            <a class="navbtn" href="https://www.linkedin.com/in/nrobinson12/" target="_blank"><i class="icon ion-social-linkedin"></i></a>
-        </div>
-        
-    </div>
 
     <div class="profile">
         <div class="text">
@@ -25,7 +15,7 @@
     
     <div class="section" id="work">
         <div class="items">
-            <a ng-href="{{ github }}" class="project" ng-repeat="project in projects track by $index">
+            <a ng-href="{{ project.where }}" class="project" ng-repeat="project in projects track by $index">
                 <div class="container">
                     <div class="container2" style="background-image: url('{{ project.image }}')"></div>
                 </div>

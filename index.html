@@ -22,6 +22,8 @@
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/desktop.css">
         <link rel="stylesheet" href="styles/phone.css">
+        <link rel="stylesheet" href="styles/home.css">
+        <link rel="stylesheet" href="styles/work.css">
 
         <!-- scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
@@ -32,7 +34,18 @@
 
     <body ng-cloak>
 
-        <div ng-view></div>
+        <div class="topnav">
+            <div class="leftside">
+                <a class="navbtn" href="/">Nicholas Robinson</a>
+            </div>
+            <div class="rightside">
+                <a class="navbtn" href="https://github.com/nrobinson12" target="_blank"><i class="icon ion-social-github"></i></a>
+                <a class="navbtn" href="https://www.linkedin.com/in/nrobinson12/" target="_blank"><i class="icon ion-social-linkedin"></i></a>
+            </div>
+            
+        </div>
+
+        <div ng-view autoscroll="true"></div>
 
         <!-- include all angular files -->
         <script src="app.js"></script>
@@ -40,6 +53,7 @@
         <!-- controllers -->
         <script src="js/controllers/mainCtrl.js"></script>
         <script src="js/controllers/homeCtrl.js"></script>
+        <script src="js/controllers/viziyaCtrl.js"></script>
         
         <!-- directives -->
 

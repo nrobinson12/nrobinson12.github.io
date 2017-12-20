@@ -8,6 +8,10 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         templateUrl: 'partials/home.html',
         controller: 'homeCtrl'
     })
+    .when('/viziya', {
+        templateUrl: 'partials/work.html',
+        controller: 'viziyaCtrl'
+    })
     .otherwise({
         redirectTo: '/'
     });
