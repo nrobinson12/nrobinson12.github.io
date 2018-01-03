@@ -3,11 +3,11 @@ app.directive('myWork', function() {
     restrict: 'A',
     replace: 'true',
     scope: {
-      type: '='
+      type: '=',
+      data: '='
     },
     templateUrl: function(elem, attr) {
-      return 'work-' + attr.type + '.html';
-      // return 'work-viziya.html';
+      return 'js/directives/work-' + attr.type + '.html';
     }
   };
 });
