@@ -1,4 +1,8 @@
-app.controller('homeCtrl', function($scope) {
+app.controller('homeCtrl', function($scope, sharedVals) {
+    $scope.setWork = function(val) {
+        sharedVals.setWork(val);
+    },
+
     $scope.projects = [
         {   image: 'assets/images/viziya3.png',
             name: 'Viziya',

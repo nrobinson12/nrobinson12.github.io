@@ -7,7 +7,7 @@ app.directive('myWork', function() {
       data: '='
     },
     templateUrl: function(elem, attr) {
-      return 'js/directives/work-' + attr.type + '.html';
+      return 'partials/work-' + attr.type + '.html';
     }
   };
 });
