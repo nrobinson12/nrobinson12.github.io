@@ -16,6 +16,14 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         templateUrl: 'partials/work.html',
         controller: 'rogueCtrl'
     })
+    .when('/dueality', {
+        templateUrl: 'partials/work.html',
+        controller: 'duealityCtrl'
+    })
+    .when('/pong', {
+        templateUrl: 'partials/work.html',
+        controller: 'pongCtrl'
+    })
     .otherwise({
         redirectTo: '/'
     });
