@@ -4,9 +4,15 @@ app.controller('homeCtrl', function($scope, sharedVals) {
     },
 
     $scope.projects = [
+        {   image: 'assets/images/ctrl-v.png',
+            name: 'Ctrl V',
+            date: 'April 30 2018 - present',
+            what: 'Work Experience',
+            where: '#/ctrlv'
+        },
         {   image: 'assets/images/viziya3.png',
             name: 'Viziya',
-            date: 'May 1 2017 - present',
+            date: 'May 1 2017 - August 25 2017',
             what: 'Work Experience',
             where: '#/viziya'
         },

@@ -24,6 +24,10 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         templateUrl: 'partials/work.html',
         controller: 'pongCtrl'
     })
+    .when('/ctrlv', {
+        templateUrl: 'partials/work.html',
+        controller: 'ctrlvCtrl'
+    })
     .otherwise({
         redirectTo: '/'
     });

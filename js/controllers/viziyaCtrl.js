@@ -3,6 +3,7 @@ app.controller('viziyaCtrl', function($scope, sharedVals) {
   $scope.work_type = sharedVals.getWork(),
   $scope.title_background = 'assets/images/viziyabackground.jpg',
   $scope.title_pic = 'assets/images/viziya1.png',
+  $scope.title_link = 'https://www.viziya.com',
   $scope.theme = 'rgb(248, 152, 29)',
 
   $scope.sections = [

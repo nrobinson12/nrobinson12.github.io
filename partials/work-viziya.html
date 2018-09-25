@@ -1,7 +1,8 @@
 <div class="work-about">
   <div class="work-separator" style="background-color: {{ theme }};"></div>
   <div class="content" ng-repeat="section in data track by $index">
-    <h3 style="color: {{ theme }};">{{ section.title }}</h3>
-    <h4>{{ section.description }}</h4>
+    <h3 ng-if="section.link" style="color: {{ theme }};"><a ng-href="{{section.link}}">{{ section.title }}</a></h3>
+    <h3 ng-if="!section.link" style="color: {{ theme }};">{{ section.title }}</h3>
+    <h4>{{ section.description }} <span ng-if="section.link"><a ng-href="{{section.link}}">here.</a></span></h4>
   </div>
 </div>
