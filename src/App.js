@@ -1,5 +1,9 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import './App.css';
+
+ReactGA.initialize('UA-148702704-1');
+ReactGA.pageview('home');
 
 function App() {
 
