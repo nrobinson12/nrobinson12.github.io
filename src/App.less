@@ -1,155 +1,155 @@
-@import 'variables.less';
+@import "variables.less";
 
 .app {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  box-sizing: border-box;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
 
-  @media screen and (min-width: @tablet) {
-    width: 50%;
-  }
-  @media screen and (max-width: @tablet) {
-    padding-left: 2em;
-    padding-right: 2em;
-  }
+    @media screen and (min-width: @tablet) {
+        width: 50%;
+    }
+    @media screen and (max-width: @tablet) {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
 }
 
 a {
-  text-decoration: none;
-  transition: color .15s ease-in;
-  box-sizing: border-box;
-  color: #000;
+    text-decoration: none;
+    transition: color 0.15s ease-in;
+    box-sizing: border-box;
+    color: #000;
 
-  &:hover {
-    color: #04ABD1;
-  }
+    &:hover {
+        color: #04abd1;
+    }
 }
 
 .header {
-  margin-top: 4em;
-  margin-bottom: 14em;
-  overflow: auto;
+    padding-top: 4em;
+    padding-bottom: 14em;
+    overflow: auto;
 
-  .home {
-    float: left;
-    width: 40%;
-  }
+    .home {
+        float: left;
+        width: 40%;
+    }
 
-  .other {
-    float: left;
-    width: 60%;
-  }
+    .other {
+        float: left;
+        width: 60%;
+    }
 }
 
 .main {
-  .nicholas {
-    height: 12em;
-    margin-bottom: 50px;
-    animation-delay: 0.2s;
+    .nicholas {
+        height: 12em;
+        margin-bottom: 50px;
+        animation-delay: 0.2s;
 
-    .text {
-      font-size: 4em;
-      font-weight: 600;
-      word-wrap: break-word;
-      width: 25%;
-      line-height: .9em;
-      margin-bottom: 1em;
-      float: left;
-      z-index: 10;
+        .text {
+            font-size: 4em;
+            font-weight: 600;
+            word-wrap: break-word;
+            width: 25%;
+            line-height: 0.9em;
+            margin-bottom: 1em;
+            float: left;
+            z-index: 10;
 
-      @media screen and (min-width: @tablet) and (max-width: @laptop) {
-        width: 35%;
-      }
-      @media screen and (max-width: @mobile-large) {
-        width: 35%;
-      }
-    }
-    
-    .profile {
-      &Container {
-        width: 75%;
-        height: 100%;
-        float: left;
-
-        @media screen and (min-width: @tablet) and (max-width: @laptop) {
-          width: 65%;
+            @media screen and (min-width: @tablet) and (max-width: @laptop) {
+                width: 35%;
+            }
+            @media screen and (max-width: @mobile-large) {
+                width: 35%;
+            }
         }
-        @media screen and (max-width: @mobile-large) {
-          width: 65%;
-        }
-      }
-      border-radius: 50%;
-      width: auto;
-      height: 100%;
-      float: right;
-    }
-  }
 
-  .blurb {
-    animation-delay: 0.4s;
-  }
+        .profile {
+            &Container {
+                width: 75%;
+                height: 100%;
+                float: left;
+
+                @media screen and (min-width: @tablet) and (max-width: @laptop) {
+                    width: 65%;
+                }
+                @media screen and (max-width: @mobile-large) {
+                    width: 65%;
+                }
+            }
+            border-radius: 50%;
+            width: auto;
+            height: 100%;
+            float: right;
+        }
+    }
+
+    .blurb {
+        animation-delay: 0.4s;
+    }
 }
 
 .app .experience {
-  animation-delay: 0.6s;
+    animation-delay: 0.6s;
 
-  .title {
-    font-size: 2em;
-    font-weight: 600;
-    margin-top: 2em;
-  }
-
-  .job {
-    .name {
-      font-weight: 600;
-      margin-top: 1.5em;
+    .title {
+        font-size: 2em;
+        font-weight: 600;
+        margin-top: 2em;
     }
-  }
+
+    .job {
+        .name {
+            font-weight: 600;
+            margin-top: 1.5em;
+        }
+    }
 }
 
 .app .footer {
-  animation-delay: 0.8s;
-  margin-bottom: 5em;
-  margin-top: 8em;
+    animation-delay: 0.8s;
+    padding-bottom: 5em;
+    padding-top: 8em;
 
-  .link {
-    padding-right: 2em;
-  }
+    .link {
+        padding-right: 2em;
+    }
 }
 
 // helpful
 
 .right {
-  float: right;
+    float: right;
 }
 
 .fade-in {
-  animation: fadeIn 1s;
-  animation-fill-mode: both;
+    animation: fadeIn 1s;
+    animation-fill-mode: both;
 }
 
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .slide-up {
-  animation: fadeInUp 0.8s;
-  animation-fill-mode: both;
+    animation: fadeInUp 0.8s;
+    animation-fill-mode: both;
 }
 
 @keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(60px);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
+    0% {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
 }
