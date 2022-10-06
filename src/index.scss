@@ -1,4 +1,4 @@
-@import "variables.less";
+@import "variables.scss";
 
 html,
 body,
@@ -9,7 +9,7 @@ body,
     box-sizing: border-box;
     font-size: 16px;
 
-    @media screen and (min-width: @tablet) {
+    @media screen and (min-width: $tablet) {
         font-size: 18px;
     }
 }
