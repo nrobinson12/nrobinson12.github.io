@@ -99,7 +99,7 @@ function App() {
                     </div>
                 </div>
                 <div className="blurb slide-up">
-                    I am a software developer currently studying computer
+                    I am a software developer who recently graduated computer
                     science at the University of Waterloo. I have experience in
                     full stack development, working with multiple different
                     companies and projects touching all areas of the development
